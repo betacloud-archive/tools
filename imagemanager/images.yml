@@ -1,0 +1,38 @@
+---
+# NOTE: Possible values for os_distro (distro) arer listed at
+#       https://docs.openstack.org/python-glanceclient/latest/cli/property-keys.html
+
+- name: Cirros
+  distro: ubuntu
+  format: qcow2
+  public: true
+  url: http://download.cirros-cloud.net/0.3.5/cirros-0.3.5-x86_64-disk.img
+  version: 0.3.5
+
+- name: Ubuntu 16.04 (Xenial Xerus)
+  distro: ubuntu
+  format: qcow2
+  public: true
+  url: https://cloud-images.ubuntu.com/xenial/current/xenial-server-cloudimg-amd64-disk1.img
+  version: 16.04
+
+- name: CentOS 7
+  distro: centos
+  format: qcow2
+  public: true
+  url: https://cloud.centos.org/centos/7/images/CentOS-7-x86_64-GenericCloud.qcow2
+  version: 7
+
+- name: Debian 8
+  distro: debian
+  format: qcow2
+  public: true
+  url: http://files-1.osism.io/debian-8-openstack-amd64.qcow2
+  version: 8
+
+- name: Debian 9
+  distro: debian
+  format: qcow2
+  public: true
+  url: http://files-1.osism.io/debian-9-openstack-amd64.qcow2
+  version: 9

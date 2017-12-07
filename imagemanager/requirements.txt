@@ -1,0 +1,5 @@
+PyYAML
+oslo.config
+oslo.log
+requests
+shade
