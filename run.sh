@@ -28,6 +28,8 @@ else
     source .venv-$tool/bin/activate
 fi
 
-python $tool/$tool.py $*
+pushd $tool
+python $tool.py $*
+popd
 
 popd
