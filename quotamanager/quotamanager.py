@@ -24,7 +24,7 @@ def update_quota(project, cloud):
 
 def check_quota(project, cloud):
 
-    if "quotaclass" in project and project.name not in ["admin", "service"]:
+    if "quotaclass" in project and project.name not in ["admin"]:
 
         quotanetwork = cloud.get_network_quotas(project.id)
         quotaupdate = False
@@ -48,7 +48,7 @@ def check_quota(project, cloud):
         if quotaupdate:
             update_quota(project, cloud)
 
-    elif "quotaclass" not in project and project.name not in ["admin", "service"]:
+    elif "quotaclass" not in project and project.name not in ["admin"]:
         print "quotaclass not set for project %s, set quotaclass to default" % project.name
         set_quotaclass(project, "default")
         project = cloud.get_project(project.id)
