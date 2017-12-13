@@ -37,7 +37,7 @@ default:
     snapshots: 0
     volumes: 0
 
-default:
+service:
   compute:
     cores: 0
     fixed_ips: 0
